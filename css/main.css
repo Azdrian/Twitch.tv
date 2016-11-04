@@ -1,1 +1,227 @@
+/********************************
+Mobile layout First styles
+*********************************/
 
+
+/***************************
+Body
+****************************/
+
+body {
+  background-color: purple;
+}
+
+
+/***************************
+wrapper
+****************************/
+
+.wrapper {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+}
+
+/***************************
+Streamers Tabs
+****************************/
+
+.streamers-heading {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.all-streamers,
+.online-streamers,
+.offline-streamers {
+  cursor: pointer;
+  height: 60px;
+  text-align: center;
+  position: relative;
+}
+
+span {
+  bottom: 35%;
+  color: white;
+  position: absolute;
+  right: 5%;
+}
+
+.all-streamers {
+  background-color: #101668;
+  padding-top: 15px;
+}
+
+.online-streamers {
+  background-color: #106820;
+  padding-top: 15px;
+}
+
+.offline-streamers {
+  background-color: #681010;
+  padding-top: 15px;
+}
+
+/**************************************
+streamers content
+**************************************/
+
+#all,
+#online,
+#offline {
+  margin-top: 20px;
+}
+
+.streamer img {
+  height: 150px;
+  width: 150px;
+}
+
+.streamer {
+  border: 1px solid white;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+ 
+ 
+}
+
+.streamer-name {
+  color: white;
+  text-decoration: none;
+}
+
+.streamer p {
+  margin: 5px;
+}
+
+.bold-text{
+  font-weight:400; 
+}
+.online {
+  color: #106820;
+  font-weight: bold;
+}
+
+.offline {
+  color: #681010;
+  font-weight: bold;
+}
+/*************************
+Footer
+**************************/
+
+footer p {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+footer p,
+.footer-link {
+  color: white;
+}
+/**************************************
+Media Queries
+**************************************/
+@media (min-width:600px) {
+  heading {
+    font-size: 3em;
+  }
+  #all,
+  #online,
+  #offline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 22px;
+  }
+  .streamer {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width:728px) {
+  .heading {
+    font-size: 4em;
+  }
+  
+   #all,
+  #online,
+  #offline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 22px;
+  }
+  .streamer {
+    display: inline-block;
+    margin-right: 20px;
+    width: 30%;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+/***********************************
+media queries for tablets & desktops
+***********************************/
+@media (min-width:800px) {
+  .heading {
+    font-size: 4em;
+  }
+  
+   #all,
+  #online,
+  #offline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 22px;
+  }
+  .streamer {
+    display: inline-block;
+    margin-right: 20px;
+    width: 30%;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width:1024px) {
+  .heading {
+    font-size: 4em;
+  }
+   #all,
+  #online,
+  #offline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 22px;
+  }
+  .streamer {
+    display: inline-block;
+    margin-right: 20px;
+    width: 30%;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
