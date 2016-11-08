@@ -1,3 +1,4 @@
+
 $(function() {
   var streamers = ["dreamhackcs", "skyzhar", "freecodecamp", "faceittv", "comster404", "brunofin",
     "terakilobyte", "robotcaleb", "sheevergaming", "esl_sc2", "ogamingsc2", "jacksofamerica", "cretetion"
