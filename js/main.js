@@ -1,5 +1,6 @@
 
 $(function() {
+  //Predefned list of channel users
   var streamers = ["dreamhackcs", "skyzhar", "freecodecamp", "faceittv", "comster404", "brunofin",
     "terakilobyte", "robotcaleb", "sheevergaming", "esl_sc2", "ogamingsc2", "jacksofamerica", "cretetion"
   ];
@@ -7,7 +8,8 @@ $(function() {
   var getTwitchApiData = function(streamer) {
     var $streamApiUrl = "https://api.twitch.tv/kraken/streams/" + streamers[i] + "?client_id=k1i2e1f36x8noimivhcdazeguby6nv2&callback=?",
       $channelApiUrl = "https://api.twitch.tv/kraken/channels/" + streamers[i] + "?client_id=k1i2e1f36x8noimivhcdazeguby6nv2&callback=?";
-
+  
+    //make API request to twitch.tv requesting data relevent to the corresponding channels and displaying it
     $.ajax({
       type: "GET",
       dataType: "jsonp",
